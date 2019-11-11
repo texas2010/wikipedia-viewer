@@ -1,1 +1,1 @@
-# freeCodeCamp Wikipedia Viewer
+# Wikipedia Viewer

@@ -1,21 +1,21 @@
 {
-  "name": "freecodecamp_wikipedia_viewer",
+  "name": "wikipedia_viewer",
   "version": "1.0.0",
-  "description": "freeCodeCamp Wikipedia Viewer Project",
+  "description": "Wikipedia Viewer Project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/texas2010/freecodecamp_wikipedia_viewer.git"
+    "url": "git+https://github.com/texas2010/wikipedia_viewer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/texas2010/freecodecamp_wikipedia_viewer/issues"
+    "url": "https://github.com/texas2010/wikipedia_viewer/issues"
   },
-  "homepage": "https://github.com/texas2010/freecodecamp_wikipedia_viewer#readme",
+  "homepage": "https://github.com/texas2010/wikipedia_viewer#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1"
