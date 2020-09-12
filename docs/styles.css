@@ -1,0 +1,59 @@
+
+html {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  background-color: #46acc2;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.is-end {
+  justify-content: flex-end;
+}
+#searchButton {
+  background-color: #ceb1be;
+  font-weight: bold;
+  color: #2d2d34;
+}
+
+#randomArticle {
+  background-color: #e2dcde;
+  font-weight: bold;
+  color: #2d2d34;
+}
+
+.resultsBox {
+  background-color: #2d2d34;
+  display: block;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+.resultsBox:hover {
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 8px solid #ceb1be;
+  border-right: 8px solid #ceb1be;
+}
+
+.resultsBox .title,
+.resultsBox .subtitle {
+  color: white;
+}
+
+.warning {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #b97375;
+  border-radius: 5px;
+  color: white;
+}
