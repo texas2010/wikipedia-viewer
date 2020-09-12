@@ -3,24 +3,18 @@ import getJSON from './request'
 
 const searchButton = document.getElementById('searchButton');
 const searchText = document.getElementById('searchInput');
-const randomArticle = document.getElementById('randomArticle');
 const searchResults = document.getElementById('searchResults');
 
 const getSearch = (e) => {
+  e.preventDefault()
   if (searchText.value.length > 0) {
-    if (e.keyCode === 13) {
-      findResults()
-    } else if (e.target.id === 'searchButton') {
-      findResults()
-    }
+    findResults()
   }
 }
 
 const findResults = async () => {
   const searchQuery = searchText.value
-  // const searchQuery = 'asdfasdf'
   const data = await getJSON(`https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchQuery}`);
-  console.log(data.query);
   viewResults(data.query.search)
 }
 
@@ -52,7 +46,7 @@ const eachViewResult = ({ title, pageid, snippet }) => {
   bodyEl.setAttribute('class', 'subtitle is-4');
   bodyEl.innerHTML = snippet;
   divEl.appendChild(bodyEl);
-  
+
   element.appendChild(divEl);
   return element;
 }
@@ -65,4 +59,3 @@ const viewWarning = () => {
 }
 
 searchButton.addEventListener('click', getSearch)
-searchText.addEventListener('keydown', getSearch)
