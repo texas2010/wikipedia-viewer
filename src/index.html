@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>Wikipedia Viewer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-three-quarters mt-6">
+                <div class="flex is-end control">
+                    <a id="randomArticle" class="button is-primary" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener">Random Article</a>
+                </div>
+                <div class="columns is-centered mt-4 field has-addons">
+                    <div class="column is-three-quarters pt-0 pr-0 control">
+                      <input id="searchInput" class="input" type="text" placeholder="Search Wikipedia">
+                    </div>
+                    <div class="control pl-0">
+                      <button id="searchButton" type="button" class="button is-info">Search</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="columns is-mobile is-centered">
+            <div id="searchResults" class="column is-three-quarters mt-6">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
